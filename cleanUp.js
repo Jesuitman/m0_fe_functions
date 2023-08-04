@@ -8,10 +8,10 @@
 
 
 // EX 1:
-function askForName() { console.log("Hello, what is your name?") }
-
+function askForName() { prompt("Hello, what is your name?") }
 askForName()
 
+// changed console.log to prompt so it will actually ask for your name and you can enter it
 
 // EX 2:
 function addThreeNums(first, second, third) {
@@ -19,12 +19,13 @@ var sum = first + second + third
 return sum;
       }
 
-addThreeNums(1, 2, 3);
-addThreeNums(4, 2, 7);
+console.log (addThreeNums(1, 2, 3));
+console.log (addThreeNums(4, 2, 7));
 
+// added console.log to the beginning of each addThreeNums function use so that it would print the result of the function
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto(){
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
@@ -33,6 +34,7 @@ func makeFreshPesto(){
 
 makeFreshPesto();
 
+// Wrote out the word function instead of abbreviating it
 
 //  EX 4:
 function average(num1, num2) 
@@ -42,3 +44,7 @@ var sum = num1 + num2;
 
 return avg
   }
+
+console.log (average (3, 30))
+
+// added console.log line to make it print out the result of the function, also added numbers to make it work
